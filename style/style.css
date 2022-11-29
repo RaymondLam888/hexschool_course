@@ -1,0 +1,260 @@
+
+
+*, *::before, *::after{
+  /* outline: 1px solid black; */
+  box-sizing:border-box;
+}
+
+.wrap{
+  width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.media{
+  display: flex;
+  justify-content: flex-end;
+  background: #f6f6f6;
+}
+
+.media ul{
+  display: flex;
+  padding: 8px 5px;
+}
+
+.media ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.media ul li a{
+  padding-left: 2px;
+  text-decoration: none;
+}
+
+.grayLine{
+  border-right: 2px solid #ccc;
+}
+
+.FB{
+  color: #4460a0;
+}
+
+.TW{
+  color: #00aaec;
+}
+/* -----------header------------ */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header ul{
+  display: flex;
+}
+
+.header li a{
+  text-decoration: none;
+  display: block;
+  padding: 20px 21px;
+  color: #0c9;
+}
+
+.header li:after{
+  display:block;
+  content: '';
+  border-bottom: solid 4px #0c9;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.header li:hover:after{
+  transform: scaleX(1);
+}
+
+/* -----------banner------------ */
+
+.banner{
+  position: relative;
+  overflow: hidden;;
+}
+
+.textBox{
+  background: #000;
+}
+
+.box{
+  background: rgb(0,0,0,0.2);
+  height: 158px;
+  width: 100%;
+  position: absolute;
+  top: 95px;
+}
+
+.banner h2{
+  padding: 39px 0 39px 24px;
+  color: white;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+/* -----------courses------------ */
+
+.courseInfo{
+  display: flex;
+  justify-content: space-around;
+  margin: 64px 0;
+}
+
+.courseInfo li{
+  box-shadow:  0px 3px 4px rgb(0,0,0,0.2);
+}
+
+.courseInfo h3{
+  font-size: 18px;
+  font-weight: bold; 
+}
+
+.courseInfo img,h3{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.courseInfo img,h3,p{
+  width: 320px;
+  padding: 0px 20px;
+  line-height: 1.5;
+}
+
+.courseInfo p{
+  font-size: 14px;
+  display: block;
+  text-align: justify;
+}
+
+/* -----------table------------ */
+
+.compare{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-bottom: 62px;
+}
+
+.compare h3{
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.coursesCompare{
+  width: 840px;
+}
+
+.coursesCompare th{
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.coursesCompare td{
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.compare .tag{
+  color: #22b28e;
+}
+
+/* -----------imputBox------------ */
+
+.message{
+  padding-top: 38px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(0,100,75,1) 0%, rgba(0,151,113,1) 100%);
+}
+
+.message h3{
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  margin-bottom: 34px;
+}
+
+.inputBox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.longMSM textarea{
+  height: 246px;
+  width: 460px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 0.4em;
+  padding-bottom:220px;
+  resize: none;
+  border: none;
+}
+
+.personalMSM{
+  display: flex;
+  flex-direction:column;
+}
+
+.personalMSM input{
+  width: 460px;
+  height: 34px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.personalMSM label{
+  color: white;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.personalMSM button{
+  width: 72px;
+  height: 34px;
+  align-self: flex-end;
+  color: white;
+  background: #0c9;
+  border-radius: 5px;
+  cursor: grab;
+  border: none;
+}
+
+/* -----------footer------------ */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 20px;
+}
+
+.footer ul li{
+  line-height: 1.5;
+}
+
+.footer span{
+  color: red;
+}
+
+.coursesCompare tr:hover{
+  background: rgb(0,200,0,0.05);
+}
